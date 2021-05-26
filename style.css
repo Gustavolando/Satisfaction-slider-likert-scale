@@ -1,11 +1,8 @@
 :root{
-  --blue-color: #273B47;
-  /* --highlight-color: #98CA3F; */
+  --blue-color: #0f4471;
   --white-color: #f6f6f6;
   --primary-color: #083358;
-	--secundary-color:  #0f4471;
 	--highlight-color: #fc3c3c;
-	--light-color: #f6f6f6;
 }
 
 * {
@@ -21,7 +18,7 @@ html {
 
 body {
   background-color: var(--primary-color);
-  color: var(--light-color);
+  color: var(--white-color);
 }
 
 .container {
@@ -30,7 +27,7 @@ body {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  row-gap: 46px;
+  row-gap: 4.6rem;
 }  
 
 .space-blank {
@@ -41,151 +38,29 @@ body {
 label[for="btn1"] {
   grid-column: 2;
   grid-row: 2;
-  position: relative;
-  cursor: pointer;
 }  
-
-.face-1 {
-  width: 100%;
-  height: 60%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.face-1 .face-draw {
-  width: 40%;
-  height: 70%;
-  border-radius: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.face-1 .face-draw i {
-  font-size: 5rem;
-}
-
-.label-1 {
-  width: 100%;
-  height: 20%;
-  font-size: 20px;
-  text-align: center;
-}
 
 label[for="btn2"] {
   grid-column: 3;
   grid-row: 2;
-  position: relative;
-  cursor: pointer;
-}
-
-.face-2 {
-  width: 100%;
-  height: 60%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.face-2 .face-draw {
-  width: 40%;
-  height: 70%;
-  border-radius: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.face-2 .face-draw i {
-  font-size: 5rem;
-}
-
-.label-2 {
-  width: 100%;
-  height: 20%;
-  font-size: 20px;
-  text-align: center;
 }
 
 label[for="btn3"] {
   grid-column: 4;
   grid-row: 2;
-  position: relative;
-  cursor: pointer;
 }  
-
-.face-3 {
-  width: 100%;
-  height: 60%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.face-3 .face-draw {
-  width: 40%;
-  height: 70%;
-  border-radius: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.face-3 .face-draw i {
-  font-size: 5rem;
-}
-
-.label-3 {
-  width: 100%;
-  height: 20%;
-  font-size: 20px;
-  text-align: center;
-}
 
 label[for="btn4"] {
   grid-column: 5;
   grid-row: 2;
-  position: relative;
-  cursor: pointer;
 }  
-
-.face-4 {
-  width: 100%;
-  height: 60%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.face-4 .face-draw {
-  width: 40%;
-  height: 70%;
-  border-radius: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.face-4 .face-draw i {
-  font-size: 5rem;
-}
-
-.label-4 {
-  width: 100%;
-  height: 20%;
-  font-size: 20px;
-  text-align: center;
-}
 
 label[for="btn5"] {
   grid-column: 6;
   grid-row: 2;
-  position: relative;
-  cursor: pointer;
 }  
 
-.face-5 {
+.face {
   width: 100%;
   height: 60%;
   display: flex;
@@ -193,7 +68,7 @@ label[for="btn5"] {
   align-items: center;
 }
 
-.face-5 .face-draw {
+.face .face-draw {
   width: 40%;
   height: 70%;
   border-radius: 100%;
@@ -202,15 +77,17 @@ label[for="btn5"] {
   align-items: center;
 }
 
-.face-5 .face-draw i {
+.face .face-draw i {
   font-size: 5rem;
 }
 
-.label-5 {
+.label {
   width: 100%;
   height: 20%;
-  font-size: 20px;
+  font-size: 1.6rem;
   text-align: center;
+  position: relative;
+  cursor: pointer;
 }
 
 .likert-draw {
@@ -224,15 +101,15 @@ label[for="btn5"] {
 
 .likert-draw .static-bar {
   width: 100%;
-  height: 27px;
-  border: 0.1px solid var(--blue-color);
+  height: 2.7rem;
+  border: 0.01rem solid var(--blue-color);
   border-radius: 50px;
 }
 
 .likert-bar {
   width: 80%;
   height: 100%;
-  border-radius: 50px;
+  border-radius: 5rem;
   background-color: var(--highlight-color);
   display: flex;
   justify-content: flex-end;
@@ -242,25 +119,25 @@ label[for="btn5"] {
 .likert-btn {
   border: 0.1px solid var(--blue-color);
   background-color: var(--highlight-color);
-  width: 49.48px;
-  height: 46px;
-  border-radius: 100px;
+  width: 4.6rem;
+  height: 4.6rem;
+  border-radius: 10rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .likert-btn-decorate {
-  border: 0.1px solid var(--blue-color);
+  border: 0.01rem solid var(--blue-color);
   background-color: var(--white-color);
-  width: 23.67px;
-  height: 22px;
+  width: 2rem;
+  height: 2rem;
   border-radius: 100px;
 }
 
 #btn1:checked ~ div .likert-bar {
-  width: 11%;
   transition-duration: 1s;
+  width: 11%;
 }
 
 #btn2:checked ~ div .likert-bar {
@@ -284,7 +161,7 @@ label[for="btn5"] {
 }
 
 #btn1:checked ~ label .face-1 .face-draw i {
-  color: red;
+  color: orangered;
   transition-duration: 1s;
 }
 
@@ -299,7 +176,8 @@ label[for="btn5"] {
 }
 
 #btn4:checked ~ label .face-4 .face-draw i {
-  color: rgb(200, 255, 0);
+  color: greenyellow;
+  color: ;
   transition-duration: 1s;
 }
 
