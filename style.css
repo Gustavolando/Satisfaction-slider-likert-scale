@@ -38,26 +38,36 @@ body {
 label[for="btn1"] {
   grid-column: 2;
   grid-row: 2;
-}  
+  position: relative;
+  cursor: pointer;
+}
 
 label[for="btn2"] {
   grid-column: 3;
   grid-row: 2;
+  position: relative;
+  cursor: pointer;
 }
 
 label[for="btn3"] {
   grid-column: 4;
   grid-row: 2;
+  position: relative;
+  cursor: pointer;
 }  
 
 label[for="btn4"] {
   grid-column: 5;
   grid-row: 2;
+  position: relative;
+  cursor: pointer;
 }  
 
 label[for="btn5"] {
   grid-column: 6;
   grid-row: 2;
+  position: relative;
+  cursor: pointer;
 }  
 
 .face {
@@ -86,8 +96,6 @@ label[for="btn5"] {
   height: 20%;
   font-size: 1.6rem;
   text-align: center;
-  position: relative;
-  cursor: pointer;
 }
 
 .likert-draw {
